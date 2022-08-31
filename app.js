@@ -8,7 +8,10 @@ const studentBL = require("./bl/studentBL");
 const app = express();
 app.use(cors());
 app.use(express.static("public"));
-mongoose.connect("mongodb://localhost:27017/shobClass");
+mongoose.connect(
+  "mongodb+srv://nadavbarak:aloniyo@cluster0.rnl9j.mongodb.net/test"
+);
+// mongoose.connect("mongodb://localhost:27017/shobClass");
 
 app.get("/mongo", async function (req, res) {
   // const classList = await classBL.mongoTest();
