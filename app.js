@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.static("public"));
 mongoose.connect(
-  "mongodb+srv://nadavbarak:aloniyo@cluster0.rnl9j.mongodb.net/test"
+  "mongodb+srv://nadavbarak:aloniyo@cluster0.rnl9j.mongodb.net/shobClass"
 );
 // mongoose.connect("mongodb://localhost:27017/shobClass");
 
