@@ -2,7 +2,6 @@
   "name": "shobserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "nodemon --inspect ./app.js",
     "start": "node app.js"
