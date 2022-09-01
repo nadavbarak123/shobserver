@@ -112,6 +112,6 @@ app.put("/assignStudentToClass/:classId/:studentId", async function (req, res) {
   );
   res.json({ result: result });
 });
-app.listen("3000", function () {
+app.listen("80", function () {
   console.log("server running of port 3000");
 });
