@@ -13,6 +13,10 @@ mongoose.connect(
 );
 // mongoose.connect("mongodb://localhost:27017/shobClass");
 
+app.get("/", async function (req, res) {
+  res.json("ok");
+});
+
 app.get("/mongo", async function (req, res) {
   // const classList = await classBL.mongoTest();
   const classList = await studentBL.mongoTest();
