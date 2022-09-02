@@ -112,6 +112,11 @@ app.put("/assignStudentToClass/:classId/:studentId", async function (req, res) {
   );
   res.json({ result: result });
 });
-app.listen("3002", function () {
-  console.log("server running of port 3000");
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port, function () {
+  console.log(`server running of port ${port}`);
 });
